@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surat untuk Vierli ✨</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ffd1dc;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            max-width: 600px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            position: relative;
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .header {
+            text-align: center;
+            color: #ff69b4;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .content {
+            line-height: 1.6;
+            font-size: 18px;
+        }
+        .emphasis {
+            color: #ff69b4;
+            font-weight: bold;
+        }
+        .signature {
+            text-align: right;
+            margin-top: 30px;
+            font-style: italic;
+            color: #ff69b4;
+        }
+        .hearts {
+            position: absolute;
+            font-size: 24px;
+            animation: pulse 1s ease-in-out infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+        .heart1 { top: 10px; left: 10px; }
+        .heart2 { top: 10px; right: 10px; }
+        .heart3 { bottom: 10px; left: 10px; }
+        .heart4 { bottom: 10px; right: 10px; }
+        .gift {
+            font-size: 40px;
+            text-align: center;
+            margin: 20px 0;
+            animation: bounce 1s ease-in-out infinite;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .share-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #ff69b4;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+        }
+        .share-button:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="hearts heart1">💕</div>
+        <div class="hearts heart2">💖</div>
+        <div class="hearts heart3">💝</div>
+        <div class="hearts heart4">💗</div>
+        
+        <div class="header">
+            ✨ Dear Vierli! ✨
+        </div>
+
+        <div class="content">
+            <p>Heloo Vierli! 🌟</p>
+            
+            <div style="text-align: center;">
+                <em>*drum roll please*</em>
+            </div>
+            
+            <div class="gift">
+                🎁 JEDAI! 🎁
+            </div>
+            
+            <p>
+                Gue tau sih ini hadiah kecil, tapi gue berharap bisa bikin hari Rabu lo jadi lebih cerah! ☀️
+            </p>
+            
+            <p>
+                <span class="emphasis">Especially</span> buat ngadepin matkul legendaris kita tercinta... 
+                <em>*bisik-bisik*</em> KORESPONDENSI NIAGA alias Bu Etty 🤣
+            </p>
+            
+            <p>
+                BTW, gue mau ngomong serius bentar nih... Gue bener-bener kagum sama dedication lo selama ini di KYLAU! 
+                <span class="emphasis">Like seriously, lo tuh AMBIS BANGET tau gak?!</span> 
+                The way lo berjuang keras belajar, effort maksimal buat pahamin materinya... that's really something! 💪
+            </p>
+            
+            <p>
+                So yeah, this small gift is my way of saying <span class="emphasis">"YOU'RE DOING AMAZING VIERR!"</span> 
+                Hope this little surprise bisa bikin lo semangat dan at least bikin lo senyum di tengah perjuangan kita bareng-bareng! ✨
+            </p>
+            
+            <p>
+                Keep shining & fighting, Vier! You got this! 💕
+            </p>
+            
+            <div class="signature">
+                XOXO,<br>
+                Mija 🤗
+            </div>
+            
+            </p>
+        </div>
+    </div>
+
+    <button 
+        class="share-button" 
+        onclick="navigator.share({
+            title: 'Surat Spesial untuk Vierli',
+            text: 'Lihat surat spesial untukmu! 💝',
+            url: window.location.href
+        }).catch(console.error)">
+        Share 🔗
+    </button>
+</body>
+</html>
